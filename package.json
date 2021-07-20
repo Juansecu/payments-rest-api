@@ -1,8 +1,8 @@
 {
-  "name": "payments-rest-api",
+  "name": "payments-rest-application",
   "version": "0.0.1",
-  "description": "A REST API to work with CyberSource API",
-  "main": "src/server.js",
+  "description": "A REST application to work with CyberSource API",
+  "main": "src/api/server.js",
   "scripts": {
     "dev": "nodemon -q .",
     "start": "node ."
@@ -25,10 +25,19 @@
   },
   "homepage": "https://github.com/Juansecu/payments-rest-api#readme",
   "dependencies": {
+    "cybersource-rest-client": "0.0.29",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5",
+    "mysql2": "^2.2.5",
+    "node-forge": "^0.10.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.6.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/uuid": "^8.3.1",
     "nodemon": "^2.0.9"
   }
 }
